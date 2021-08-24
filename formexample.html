@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS LOGIN FORM</title>
+	<style>
+		body
+		{
+			background:blue url("download.jpeg") no-repeat top scroll;
+			background-size:cover;
+		}
+		#login
+		{
+			background:linear-gradient(45deg,red,blue,green);
+			text-align:center;
+			width:280px;
+			margin:100px auto;
+			padding:15px;
+			border-radius:20px;
+			box-shadow:0 0 10px blue;
+		}
+		.form-group input[type='text'],
+		.form-group input[type='password'],
+		select
+		{
+			margin-top:15px;
+			width:240px;
+			height:30px;
+			border:none;
+			outline:none;
+			background:none;
+			border-bottom:2px solid whitesmoke;
+		}
+		select
+		{
+			width:245px;
+			height:33px;
+			color:white;
+			font-size:20px;
+		}
+		.form-group input[type='submit']
+		{
+			width:245px;
+			margin-top:10px;
+			background:linear-gradient(145deg,green,yellow,red);
+			border:none;
+			outline:none;
+			padding:10px 20px;
+			color:blue;
+			border-radius:10px;
+			font-weight:bold;
+		}
+		.form-group input[type='submit']:hover
+		{
+			box-shadow:0 0 10px white;
+			cursor:pointer;
+		}
+		::placeholder
+		{
+			color:whitesmoke;
+			font-size:20px;
+		}
+		#logo img
+		{
+			width:60px;
+			height:60px;
+			border:15px solid red;
+			border-radius:50%;
+			margin-top:-60px;
+			box-shadow:0 0 10px white;
+		}
+		.signup{
+			margin-top: 10px;
+			color: white;
+		}
+		.form1{
+			color: red;
+			text-decoration: none;
+		}
+	</style>
+</head>
+<body>
+	<div id="login">
+		<div id="logo">
+			<img src="https://play-lh.googleusercontent.com/wXfYPqJ5hHkcRWxnVqj9qVWaCSYXxDttBkBbkuVPoEvR5BNQdIhX3nCSL6dERQHgB0c" alt="">
+		</div>
+		<form>
+		<div class="form-group">
+			<input type="text" name="usn" placeholder="Enter Username">
+		</div>
+		<div class="form-group">
+			<input type="text" name="email" placeholder="Enter Email">
+		</div>
+		<div class="form-group">
+			<input type="password" name="pw" placeholder="Enter Password">
+		</div>
+		<div class="form-group">
+			<input type="password" name="cpw" placeholder="Enter Confirm Password">
+		</div>
+		<div class="form-group">
+			<select>
+				<option>Select Designation</option>
+				<option>Team Lead</option>
+				<option>Project Manager</option>
+				<option>Software Eng..</option>
+			</select>
+		</div>
+		<div class="form-group">
+			<input type="submit" value="LOG IN">
+		</div>
+		<div class="signup">Don't have an account?<a  class="form1" href="sign.html" target="_blank">Sign up</a></div>
+	    </form>
+	</div>
+</body>
+</html>
